@@ -184,6 +184,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/multiprocess-0.70.19-py314hc5dbbe4_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/networkx-3.6.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/nlohmann_json-3.12.0-h5112557_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/nltk-3.9.4-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/numpy-2.4.3-py314h02f10f6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nvidia-ml-py-13.595.45-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/omegaconf-2.3.0-pyhd8ed1ab_0.conda
@@ -230,6 +231,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/pywin32-on-windows-0.1.0-pyh07e9846_2.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/pyyaml-6.0.3-py314h2359020_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/re2-2025.11.05-ha104f34_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/regex-2026.3.32-py314h5a2d7ad_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/rich-14.3.3-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ruamel.yaml-0.19.1-pyhcf101f3_0.conda
@@ -2547,6 +2549,20 @@ packages:
   license_family: MIT
   size: 134870
   timestamp: 1758194302226
+- conda: https://conda.anaconda.org/conda-forge/noarch/nltk-3.9.4-pyhcf101f3_0.conda
+  sha256: c872b1659fe016fc8592f2271bb2f805d511f4266503388e48aff5e836c1fec6
+  md5: b7062c4781765a9e0b10403550a771c0
+  depends:
+  - python >=3.10
+  - click
+  - joblib
+  - regex >=2021.8.3
+  - tqdm
+  - python
+  license: Apache-2.0
+  license_family: APACHE
+  size: 1161578
+  timestamp: 1774340885455
 - conda: https://conda.anaconda.org/conda-forge/win-64/numpy-2.4.3-py314h02f10f6_0.conda
   sha256: e4afa67a7350836a1d652f8e7351fe4cb853f8eb8b5c86c9203cefff67669083
   md5: 54355aaff5c94c602b7b9540fbc3ca1d
@@ -3171,6 +3187,19 @@ packages:
   license_family: BSD
   size: 220305
   timestamp: 1768190225351
+- conda: https://conda.anaconda.org/conda-forge/win-64/regex-2026.3.32-py314h5a2d7ad_0.conda
+  sha256: 6010117a2d52b0a0caf6e0e908efec31fd8ffd0a839c90008fb1a425273a45cb
+  md5: a554bf71c2578956357a3a0cd60506a0
+  depends:
+  - python >=3.14,<3.15.0a0
+  - python_abi 3.14.* *_cp314
+  - ucrt >=10.0.20348.0
+  - vc >=14.3,<15
+  - vc14_runtime >=14.44.35208
+  license: Apache-2.0 AND CNRI-Python
+  license_family: PSF
+  size: 373950
+  timestamp: 1774742285634
 - conda: https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda
   sha256: c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e
   md5: 10afbb4dbf06ff959ad25a92ccee6e59
