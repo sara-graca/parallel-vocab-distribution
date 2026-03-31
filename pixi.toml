@@ -1,0 +1,18 @@
+[workspace]
+authors = ["sara-graca <saravsgraca@gmail.com>"]
+channels = ["conda-forge"]
+name = "parallelism-word-count"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.3,<3.15"
+dvc = ">=3.67.1,<4"
+datasets = ">=4.8.4,<5"
+numpy = ">=2.4.3,<3"
+joblib = ">=1.5.3,<2"
+py-spy = ">=0.4.1,<0.5"
+scalene = ">=1.5.51,<2"
+memory_profiler = ">=0.61.0,<0.62"
