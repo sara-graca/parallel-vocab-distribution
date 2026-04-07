@@ -22,10 +22,12 @@ partial_counts = []
 def worker():
     while not queue.empty():
         fp = queue.get()
+        print(f"Worker starting: {fp}")
         with open(fp, "r", encoding="utf-8") as f:
             text = f.read()
         tokens = re.findall(r"[a-z]+", text.lower())
         partial_counts.append(Counter(tokens))
+        print(f"Worker finished: {fp}")
         queue.task_done()
 
 # map
