@@ -66,3 +66,6 @@ with open(RESULTS_FILE, "a", newline="") as f:
 })
  
 print(f"\nResults saved to {RESULTS_FILE}")
+
+import json
+json.dump(dict(global_counts), open("results/counts_sequential.json", "w"))
