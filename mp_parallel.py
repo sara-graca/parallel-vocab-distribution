@@ -9,7 +9,7 @@ from multiprocessing import Pool
 
 DATA_DIR = "data/"
 RESULTS_FILE = "results/timing.csv"
-N_WORKERS = 2
+N_WORKERS = int(os.getenv("N_WORKERS", 2))
 
 filepaths = sorted([os.path.join(DATA_DIR, f) for f in os.listdir(DATA_DIR)])
 

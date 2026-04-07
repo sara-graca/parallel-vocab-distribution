@@ -8,7 +8,7 @@ import joblib
 
 DATA_DIR = "data/"
 RESULTS_FILE = "results/timing.csv"
-N_JOBS = 4
+N_JOBS = int(os.getenv("N_JOBS", 4))
 
 filepaths = sorted([os.path.join(DATA_DIR, f) for f in os.listdir(DATA_DIR)])
 
